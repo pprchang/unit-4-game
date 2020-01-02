@@ -6,8 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="/assets/css/reset.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -30,11 +30,11 @@
 
     <!--Dropdown Game Direction-->
     <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
+      <div class="card border-0">
+        <div class="card-header bg-white" id="headingOne">
           <h2 class="mb-0 text-center text-decoration-none">
             <button
-              class="btn btn-link text-decoration-none"
+              class="btn btn-link text-decoration-none bg-info text-white"
               type="button"
               data-toggle="collapse"
               data-target="#collapseOne"
@@ -52,7 +52,7 @@
           aria-labelledby="headingOne"
           data-parent="#accordionExample"
         >
-          <div class="card-body">
+          <div class="card-body text-white text-center">
             <p>You will be given a random number at the start of the game.</p>
             <p>
               There are four crystals below. By clicking on a crystal you will
@@ -62,8 +62,7 @@
               <strong>
                 You win the game by matching your total score to random number.
                 You lose the game if your total score goes above the random
-                number.</strong
-              >
+                number.</strong>
             </p>
             <p>
               The value of each crystal is hidden from you until you click on
@@ -94,12 +93,28 @@
                   <h2 id="wins-text" class="text-center font-weight-bolder text-success"></h2>
                   </div>
               </div>
-      
+
+              <div class="card float-left p-3 mr-n2" style="width: 10rem; box-sizing: border-box;">
+                  <img src="assets/images/targetNumber.jpg" class="card-img-top" alt="Win image">
+                  <hr>
+                  <div class="card-body">
+                  <h2 id = "targetNumber" class="text-center font-weight-bolder text-warning"></h2>
+                  </div>
+              </div>
+
               <div class="card float-right p-3" style="width: 10rem; box-sizing: border-box;">
-                  <img src="assets/images/you-lose-banner-sm-@x2.png" class="card-img-top" alt="Losses image">
+                  <img src="assets/images/you-lose-banner-sm-@x2.png" class="card-img-top" alt="Win image">
                   <hr>
                   <div class="card-body">
                   <h2 id="losses-text" class="text-center font-weight-bolder text-danger"></h2>
+                  </div>
+              </div>
+      
+              <div class="card float-right p-3" style="width: 10rem; box-sizing: border-box;">
+                  <img src="assets/images/total.png" class="card-img-top" alt="Losses image">
+                  <hr>
+                  <div class="card-body">
+                  <h2 id="total" class="text-center font-weight-bolder text-primary"></h2>
               </div>
               
 
@@ -112,30 +127,35 @@
 
   </div>
 
-    <div id="number-to-guess"></div>
+    <br>
 
-    <img
-      id="crystal"
+    <div align="middle">
+      <img
+      id="cryOne"
       src="assets/images/crystalOne.jpg"
       alt="Crystal One Image"
     />
     <img
-      id="crystal"
+      id="cryTwo"
       src="assets/images/crystalTwo.jpg"
       alt="Crystal Two Image"
     />
     <img
-      id="crystal"
+      id="cryThree"
       src="assets/images/crystalThree.jpg"
       alt="Crystal Three Image"
     />
     <img
-      id="crystal"
+      id="cryFour"
       src="assets/images/crystalFour.jpg"
       alt="Crystal Four Image"
     />
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/javascript/game.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+  </body>
   </body>
 </html>

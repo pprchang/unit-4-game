@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Crystals Collector</title>
+  </head>
+  <body>
+    <!--Heading-->
+    <div class="jumbotron jumbotron-fluid bg-info rounded-lg">
+      <div class="container">
+        <h1 class="display-4 text-center font-weight-bolder text-white">
+          Crystals Collector!!
+        </h1>
+      </div>
+    </div>
+
+    <!--Dropdown Game Direction-->
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0 text-center text-decoration-none">
+            <button
+              class="btn btn-link text-decoration-none"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <strong> Click HERE for Game Rule:</strong>
+            </button>
+          </h2>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse bg-info"
+          aria-labelledby="headingOne"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>
+              There are four crystals below. By clicking on a crystal you will
+              add a specific amout of points to your total score.
+            </p>
+            <p>
+              <strong>
+                You win the game by matching your total score to random number.
+                You lose the game if your total score goes above the random
+                number.</strong
+              >
+            </p>
+            <p>
+              The value of each crystal is hidden from you until you click on
+              it.
+            </p>
+            <p>
+              Each time when the game starts, the game will change the values of
+              each crystal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <!--Wins and Losses Score-->
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-2"></div> 
+
+          <div class="col-sm-8 clearfix">
+      
+              <div class="card float-left p-3" style="width: 10rem; box-sizing: border-box;">
+                  <img src="assets/images/winner2.jpg" class="card-img-top" alt="Win image">
+                  <hr>
+                  <div class="card-body">
+                  <h2 id="wins-text" class="text-center font-weight-bolder text-success"></h2>
+                  </div>
+              </div>
+      
+              <div class="card float-right p-3" style="width: 10rem; box-sizing: border-box;">
+                  <img src="assets/images/you-lose-banner-sm-@x2.png" class="card-img-top" alt="Losses image">
+                  <hr>
+                  <div class="card-body">
+                  <h2 id="losses-text" class="text-center font-weight-bolder text-danger"></h2>
+              </div>
+              
+
+          </div>
+
+          <div class="col-sm-2"></div>
+          
+
+      </div>
+
+  </div>
+
+    <div id="number-to-guess"></div>
+
+    <img
+      id="crystal"
+      src="assets/images/crystalOne.jpg"
+      alt="Crystal One Image"
+    />
+    <img
+      id="crystal"
+      src="assets/images/crystalTwo.jpg"
+      alt="Crystal Two Image"
+    />
+    <img
+      id="crystal"
+      src="assets/images/crystalThree.jpg"
+      alt="Crystal Three Image"
+    />
+    <img
+      id="crystal"
+      src="assets/images/crystalFour.jpg"
+      alt="Crystal Four Image"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/javascript/game.js"></script>
+  </body>
+</html>

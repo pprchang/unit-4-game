@@ -26,27 +26,31 @@ $(document).ready(function() {
   $('#targetNumber').text(targetNumber);
   $('#total').text(total);
 
-  //reset function
+  //reset function for targetNumber
   function reset() {
-    var targetNumber = Math.floor(Math.random() * 102 + 19);
+    targetNumber = Math.floor(Math.random() * 102 + 19);
 
-    var crystalOne = Math.floor(Math.random() * 12 + 1);
+    $('#targetNumber').text(targetNumber);
+  }
+
+  // reset function for crystal random number
+  function random() {
+    crystalOne = Math.floor(Math.random() * 12 + 1);
     console.log(crystalOne);
 
-    var crystalTwo = Math.floor(Math.random() * 12 + 1);
+    crystalTwo = Math.floor(Math.random() * 12 + 1);
     console.log(crystalTwo);
 
-    var crystalThree = Math.floor(Math.random() * 12 + 1);
+    crystalThree = Math.floor(Math.random() * 12 + 1);
     console.log(crystalThree);
 
-    var crystalFour = Math.floor(Math.random() * 12 + 1);
+    crystalFour = Math.floor(Math.random() * 12 + 1);
     console.log(crystalFour);
 
     total = 0;
+    console.log(total);
 
     $('#total').text(total);
-
-    $('#targetNumber').text(targetNumber);
   }
 
   //increment win and display it
@@ -54,6 +58,7 @@ $(document).ready(function() {
     win++;
     $('#wins-text').text(win);
     reset();
+    random();
   }
 
   //increment losses and display it
@@ -61,6 +66,7 @@ $(document).ready(function() {
     losses++;
     $('#losses-text').text(losses);
     reset();
+    random();
   }
 
   //on click event for crystal
@@ -68,7 +74,7 @@ $(document).ready(function() {
     total = total + crystalOne;
     $('#total').text(total);
 
-    if (total === targetNumber) {
+    if (total == targetNumber) {
       winner();
     } else if (total > targetNumber) {
       losser();

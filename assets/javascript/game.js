@@ -48,7 +48,6 @@ $(document).ready(function() {
     console.log(crystalFour);
 
     total = 0;
-    console.log(total);
 
     $('#total').text(total);
   }

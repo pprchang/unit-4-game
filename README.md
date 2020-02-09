@@ -7,10 +7,11 @@ The user will be given a random number at the start of the game.  There are four
 ## *Built With*
 
 #### Code Editor: 
-Visual Stuido Code (https://code.visualstudio.com/)
+- Visual Stuido Code (https://code.visualstudio.com/)
 
 #### Layout and Styling: 
-Bootstrap 4 (https://getbootstrap.com/)
+- Bootstrap 4 (https://getbootstrap.com/)
+- CSS 3
 
 #### Javascript:
 1. Function to generate a random number between 19 thru 120 for the random number

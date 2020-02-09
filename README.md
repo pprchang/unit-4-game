@@ -1,5 +1,5 @@
 # Crystals Collector
-The user will be given a random number at the start of the game.  There are four crystals below and by clicking on a crystal the user will add a specific amount of points to the user's total score.  The user wins the game by matching the user's total score to random number; hoever, the user loses the game if the user's total score goes above the random number.  The value of each crystal is hidden from the user until the user click on it.  Each time when the game starts, the game will change the values of each crystal.
+The user will be given a random number at the start of the game.  There are four crystals below and by clicking on a crystal the user will add a specific amount of points to the user's total score.  The user wins the game by matching the user's total score to random number; however, the user loses the game if the user's total score goes above the random number.  The value of each crystal is hidden from the user until the user click on it.  Each time when the game starts, the game will change the values of each crystal.
 
 ## *Link to Live Page*
 (https://pprchang.github.io/unit-4-game/)
